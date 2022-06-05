@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css variable</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <section>
+      <h1 class="heading">
+        Update css variable with <span class="js">JS</span>
+      </h1>
+
+      <div>
+        <label for="spacing">Spacing:</label>
+        <input
+          data-spacing="0"
+          type="range"
+          name="Spacing "
+          id="spacing"
+          min="0"
+          max="100"
+          value="10"
+        />
+      </div>
+
+      <div>
+        <label for="blur">Blur:</label>
+        <input data-blur="0" type="range" name="blur" id="blur" value="20" />
+      </div>
+      <div>
+        <label for="base-color">Base-Color:</label>
+        <input
+          data-baseColor="0"
+          type="color"
+          name="Base-color "
+          id="Base-color"
+        />
+      </div>
+    </section>
+    <div class="image__container">
+      <img src="./images/unsplash.jpg" alt="lovers" class="image" />
+    </div>
+    <script href="text/javascript" src="./script.js"></script>
+  </body>
+</html>
