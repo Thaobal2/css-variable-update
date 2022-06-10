@@ -7,11 +7,12 @@ const inputs = document.querySelectorAll("input");
 const image = document.querySelector(".image");
 
 inputs.forEach((input) => {
+  console.log(input.value);
   input.oninput = () => {
     if (input === rangeSpacing)
       return (image.style.padding = `${input.value}px`);
     else if (input === rangeBlur)
       return (image.style.filter = `blur(${input.value}px)`);
-    else return (box.style.backgroundColor = `${input.value}`);
+    else return (image.style.backgroundColor = `${input.value}`);
   };
 });
