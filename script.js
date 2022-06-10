@@ -5,6 +5,7 @@ const rangeBlur = document.querySelector("[data-blur='0']");
 const rangeBaseColor = document.querySelector("[data-baseColor='0']");
 const inputs = document.querySelectorAll("input");
 const image = document.querySelector(".image");
+const js = document.querySelector(".js");
 
 inputs.forEach((input) => {
   console.log(input.value);
@@ -13,6 +14,9 @@ inputs.forEach((input) => {
       return (image.style.padding = `${input.value}px`);
     else if (input === rangeBlur)
       return (image.style.filter = `blur(${input.value}px)`);
-    else return (image.style.backgroundColor = `${input.value}`);
+    else {
+      js.style.color = `${input.value}`;
+      image.style.backgroundColor = `${input.value}`;
+    }
   };
 });
